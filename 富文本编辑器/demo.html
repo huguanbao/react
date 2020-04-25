@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="bold()">加粗</button>
+    <button onclick="insertImg()">插入图片</button>
+    <div contenteditable="true">
+        <p>123123</p>
+    </div>
+    <script>
+        function bold(){
+            document.execCommand('bold',false,null)
+        }
+        function insertImg(){
+            let img = 'https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1555620250,991762746&fm=26&gp=0.jpg'
+            document.execCommand('insertImage',false,img)
+        }
+    </script>
+</body>
+</html>

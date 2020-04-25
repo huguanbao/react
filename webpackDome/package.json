@@ -1,0 +1,36 @@
+{
+  "name": "webpackdome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev11": "webpack --mode=production",
+    "dev_dir": "webpack --mode=development ./demo1/src/index.js -o ./demo1/dist/main.js",
+    "start": "webpack",
+    "dev": " webpack-dev-server  --config reactDemo/config/webpack.dev_config.js",
+    "build": "webpack --config reactDemo/config/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.4",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.0.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
